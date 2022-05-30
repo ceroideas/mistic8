@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "mistic-8-18d37": {
+      "hosting": {
+        "app": [
+          "mistic-8-18d37"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "mistic-8-18d37"
+  }
+}

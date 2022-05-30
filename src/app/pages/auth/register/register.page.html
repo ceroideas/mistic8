@@ -1,0 +1,50 @@
+<ion-content>
+  <ion-col class="registerContent">
+    <ion-card
+      class="registerLogo"
+      style="--background: url('../../../../assets/Archivos/imagotipo version vertical/logoRes1.png') no-repeat top center / contain">
+    </ion-card>
+    <form [formGroup]="registerForm">
+      <ion-row class="input">
+        <ion-col class="ion-no-padding">
+          <ion-item color="light" class="registerPhoneInput- ion-no-padding">
+            <ion-label position="floating">{{ "AUTH.FORGOT.number" | translate }}</ion-label>
+            <ion-input formControlName="phone" type="text" required></ion-input>
+          </ion-item>
+
+          <div class="space"></div>
+          <br>
+          <ion-row>
+            <ion-text *ngIf="formError" color="danger" class="form-error">
+              {{formErrorMessage}}
+            </ion-text>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="ion-no-padding">
+          <!-- <ion-button class="sendSMSButton-" mode="ios" fill="outline"
+            shape="round" vertical="bottom" horizontal="end" (click)="sendConfirmationSMS()">{{ "AUTH.FORGOT.send" | translate }}</ion-button> -->
+
+            <ion-button type="submit" mode="ios" color="dark" expand="block"(click)="sendConfirmationSMS()">
+              {{ "AUTH.FORGOT.send" | translate }}
+            </ion-button>
+        </ion-col>
+      </ion-row>
+      <br>
+ 
+      <ion-row class="alreadyAccount">
+        <ion-col class="ion-no-padding">
+          <ion-text class="yaTienesCuenta">
+            {{ "AUTH.FORGOT.already" | translate }}
+          </ion-text>
+          <a routerLink="/login"> {{"AUTH.LOGIN.login" | translate}} </a>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-col>
+  <!-- Empty container for the Recaptcha verifier -->
+  <ion-card-content id="register-button">
+  </ion-card-content>
+</ion-content>

@@ -1,0 +1,86 @@
+// General view variables
+$logo-height: 300px;
+$form-height: 250px;
+
+$input-horizontal-margin: 10vw;
+
+$error-font-size: 13px;
+
+ion-content {
+    --background: #fff; 
+    // --background: linear-gradient(180deg, var(--ion-color-secondary) 0%, var(--ion-color-secondary-shade) 100%); 
+    --padding-bottom: 0 !important;
+}
+
+.registerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    min-height: 100vh;
+    text-align: center;
+    
+    .registerLogo {
+        flex:5 10 $logo-height;
+        height: auto;
+        box-shadow: none !important;
+    }
+
+    .space {
+        flex:1 5 auto;
+    }
+
+    form {
+        width: 90%;
+        flex:5 0 auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .input {
+            padding-bottom: 10px;
+        }
+
+        .alreadyAccount {
+            height: 20px;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            color: #333 !important;
+            font-size: 13px;
+            text-decoration: none;
+        }     
+    }
+}
+
+.registerPhoneInput {
+    margin-left: $input-horizontal-margin;
+    margin-right: $input-horizontal-margin;
+    border-radius: 20px;
+    --border-radius: 20px;
+    --border-width: 1px;
+    --highlight-height: 2px;
+}
+
+.form-error {
+    font-size: $error-font-size;
+    padding-top: $error-font-size * 0.5;
+    padding-left: $input-horizontal-margin + 4.5vw;
+    color: var(--ion-color-danger-tint);
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.sendSMSButton {
+    --background: var(--ion-color-secondary);
+    --color: var(--ion-color-tertiary);
+    --border-radius: 20px;
+    --border-width: 0px;
+}
+
+#register-button {
+    display: none !important;
+}

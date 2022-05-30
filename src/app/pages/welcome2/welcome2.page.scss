@@ -1,0 +1,44 @@
+//@import 'src/assets/fonts/Signerica/Signerica_Fat.ttf';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@font-face {
+    font-family: Signerica;
+    src: url(../../../assets/fonts/Signerica/Signerica_Fat.ttf) format('truetype');
+}
+
+.Signerica{
+    font-family: Signerica;
+}
+
+.title{
+    font-size: 22px;
+    margin-top: 16em;
+    text-align: center;
+    color: white;
+}
+
+.loginButtons{
+    // Su propia posicion
+    margin-top: 5em;
+    width: 100%;
+    display:grid;
+    justify-content: center;
+}
+
+.loginButtons ion-button{
+    width: 300px;
+    font-weight: 300;
+}
+
+.noAccountText{
+    text-align: center;
+    margin-top: 3em;
+    font-size: 13px;
+    color: white;
+    font-weight: 300;
+}
+
+.link{
+    color: #243746;
+    text-decoration: none;
+  }

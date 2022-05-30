@@ -1,0 +1,44 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/*ion-content {
+    --background: none;
+    background-image: url('../../../assets/img/laguna-barca.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }*/
+.buttons-container {
+    // Botones de dentro
+    display: flex;
+    justify-content: space-between;
+
+    // Su propia posicion
+    padding-left: 2em;
+    padding-right: 2em;
+    position: absolute;
+    bottom: 6em;
+    width: 100%;
+}
+
+.button {
+    width: 110px;
+    height: 40px;
+    font-weight:lighter;
+}
+
+.t1 {
+    margin: 0 auto;
+    margin-top: 20%;
+    font-size: 54px;
+    font-weight:bold;
+    color: white;
+    text-align: center;
+}
+.t2 {
+    margin: 0 auto;
+    font-weight:normal;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,8 @@
+<ion-tabs>
+  <ion-tab-bar color="tertiary" slot="bottom">
+    <ion-tab-button *ngFor="let tab of tabs; index as i" (click)="changeTab(tab.name)" tab="{{tab.name}}">
+      <ion-icon *ngIf="tab.adjustedSize" class="adjusted-icon" name="{{tab.isSelected ? tab.iconName + '-black' : tab.iconName}}"></ion-icon>
+      <ion-icon *ngIf="!tab.adjustedSize" name="{{tab.isSelected ? tab.iconName + '-black' : tab.iconName}}"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

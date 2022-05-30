@@ -1,0 +1,136 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Opciones</ion-title>
+    <ion-buttons slot="start">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content color="light" [fullscreen]="true" *ngIf="user$ | async as user">
+
+  <div class="header">
+    
+    <ion-row style="width: 100%;">
+      <ion-col size="8">
+        <div style="position: relative; height: 100.781px; overflow: hidden; margin-top: -52px;">
+          <h3 class="user-name">{{nombreUser}}</h3>
+        </div>
+
+        <small class="arrobauser">@{{misticId}}</small>
+      </ion-col>
+      <ion-col size="4">
+        <div class="user-profile-img">
+          <img *ngIf="!avatar" src="assets/img/ProfileUser.png">
+          <img *ngIf="avatar" [src]="avatar">
+        </div>
+      </ion-col>
+    </ion-row>
+
+  </div>
+
+  <!-- <div id="profile-options">
+    <ion-grid>
+      <p class="user">{{nombreUser}}</p>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="10">
+          <ion-button routerLink="/edit-user-data" expand="block" color="secondary" shape="round">
+            Editar pefil
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="10">
+          <ion-button routerLink="/edit-user-password" expand="block" color="secondary" shape="round">
+            cambiar contraseña
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="10">
+          <ion-button (click)="openPrivacyPolicy()" expand="block" color="secondary" shape="round">
+            Políticas de privacidad
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="10">
+          <ion-button (click)="logout()" expand="block" color="secondary" shape="round">
+            Cerrar sesión
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="10">
+          <ion-button (click)="presentAlertMultipleButtons()" expand="block" color="tertiary" shape="round">
+            Borrar cuenta
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div> -->
+
+  <ion-list style="padding: 64px 32px;">
+    
+    <ion-item lines="none" routerLink="/edit-user-data">
+
+      <ion-label slot="start">{{"OPTIONS.option_1" | translate}}</ion-label>
+
+      <span slot="end">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </span>
+      
+    </ion-item>
+
+    <ion-item lines="none" routerLink="/edit-user-password">
+
+      <ion-label slot="start">{{"OPTIONS.option_2" | translate}}</ion-label>
+
+      <span slot="end">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </span>
+      
+    </ion-item>
+
+    <ion-item lines="none" (click)="openPrivacyPolicy()">
+
+      <ion-label slot="start">{{"OPTIONS.option_3" | translate}}</ion-label>
+
+      <span slot="end">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </span>
+      
+    </ion-item>
+
+    <ion-item lines="none" (click)="logout()">
+
+      <ion-label slot="start">{{"OPTIONS.option_4" | translate}}</ion-label>
+
+      <span slot="end">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </span>
+      
+    </ion-item>
+
+    <ion-item lines="none" (click)="presentAlertMultipleButtons()">
+
+      <ion-label slot="start">{{"OPTIONS.option_5" | translate}}</ion-label>
+
+      <span slot="end">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </span>
+      
+    </ion-item>
+
+    <ion-item lines="none" (click)="selectLanguage()">
+
+      <ion-label slot="start">{{"OPTIONS.option_6" | translate}}</ion-label>
+
+      <span slot="end">
+        {{language.name}}
+      </span>
+      
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>

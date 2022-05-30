@@ -1,0 +1,70 @@
+$space-height: 60vh;
+$background-image: '../../../../assets/img/fondo-planta-hd.jpg';
+
+ion-content {
+    --padding-bottom: 0 !important;
+}
+
+.loginContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    min-height: 100vh;
+    text-align: center;
+    background: var(--ion-color-light);
+
+    .loginLogo {
+        flex:5 10 200px;
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+        --background: url('../../../../assets/Archivos/imagotipo version vertical/logoRes1.png') no-repeat top center / contain;
+        box-shadow: none !important;
+    }
+}
+
+form {
+    width: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: auto;
+
+    min-height: 400px;
+    // padding: 0px 10vw;
+    // background: url($background-image) no-repeat top center / cover;
+    background: #fff;
+
+    > div {
+        height: $space-height;
+    }
+
+    > .input {
+        border-radius:20px;
+        --border-radius: 20px;
+        --border-width: 0px;
+        --background: rgba(123, 93, 152, 0.65)
+        
+    }
+
+    > ion-text {
+        // Spacing text inside
+        padding-left: 4vw;
+
+        // Box size and appearance
+        background: var(--ion-color-light);
+        color: var(--ion-color-danger-tint);
+        margin-left: 4vw;
+        margin-right: 20vw;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    /* > .sendButton {
+        text-align: center;
+        .button-native {
+            color: red !important;
+        }
+    } */
+}

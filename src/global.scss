@@ -1,0 +1,129 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+.rojo span, .rojo .sc-ion-action-sheet-md {
+    color: red !important;
+}
+
+.select-fill-data {
+    .list-md {
+        background: var(--ion-color-tertiary-shade) !important;
+    }
+
+    .select-interface-option {
+        --background: var(--ion-color-tertiary-shade);
+        ion-radio {
+            --color: var(--ion-color-tertiary);
+        }
+    }
+}
+
+/* .action-sheet-fill-data {
+    margin: 30% 60px;
+
+    --background: var(--ion-color-tertiary-shade);
+    --button-color: #fff;
+
+    .action-sheet-group-cancel {
+        background-color: var(--ion-color-tertiary-contrast) !important;
+    }
+}
+
+.select-fill-data-option {
+    --background: var(--ion-color-tertiary-shade);
+} */
+
+.tutorialAlert {
+    --background: var(--ion-color-tertiary-shade);
+
+    .alert-message {
+        color: white;
+
+        a {
+            color: var(--ion-color-tertiary-tint) !important;
+        }
+    }
+}
+
+.policyAlert {
+    .alert-wrapper {
+        text-align:left;
+        max-width: 90vw;
+
+        h3 {
+            color: #fff;
+        }
+
+        h4 {
+            color: var(--ion-color-tertiary-tint);
+        }
+
+        button {
+            background-color: #fff;
+            border-radius: 10%;
+        }
+
+        .alert-button-inner {
+            color: var(--ion-color-tertiary-contrast);
+        }
+    }
+}
+
+.eraseAccount {
+    --background: var(--ion-color-tertiary-shade);
+
+    .alert-message {
+        color: white;
+    }
+
+    .alert-button.sc-ion-alert-md {
+        color: var(--ion-color-tertiary);
+    }
+
+    .borrarCuenta {
+        font-weight: bold;
+        color: var(--ion-color-tertiary) !important;
+    }
+}
+
+ion-content {
+    --padding-bottom: 80px !important;
+    --background: #333;
+}
+
+.user-name {
+    position: absolute;
+    bottom: 0;
+}
+
+.user-profile-img {
+    img {
+        height: 100% !important;
+        // width: auto !important;
+        max-width: unset !important;
+    }
+}

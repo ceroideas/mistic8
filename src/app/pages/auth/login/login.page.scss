@@ -1,0 +1,84 @@
+// General view variables
+$logo-height: 200px;
+$form-height: 250px;
+
+$input-horizontal-margin: 10vw;
+
+$error-font-size: 13px;
+
+ion-content {
+    --padding-bottom: 0 !important;
+}
+
+.loginContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    min-height: 100vh;
+    text-align: center;
+    // background: linear-gradient(180deg, var(--ion-color-secondary) 0%, var(--ion-color-secondary-shade) 100%);
+    background: var(--ion-color-light);
+
+    .loginLogo {
+        flex:5 10 $logo-height;
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+        --background: url('../../../../assets/Archivos/imagotipo version vertical/logoRes1.png') no-repeat top center / contain;
+        box-shadow: none !important;
+    }
+
+    .space {
+        flex:1 5 auto;
+    }
+
+    form {
+        width: 90%;
+        flex:5 0 auto;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px !important;
+        margin: auto;
+
+        .loginInput {
+            margin-bottom: 10px;
+            margin-left: $input-horizontal-margin;
+            margin-right: $input-horizontal-margin;
+            border-radius: 20px;
+            --border-radius: 20px;
+            --border-width: 1px;
+            --highlight-height: 2px;
+        }
+
+        // .button {
+        //     padding-top: 10px;
+        //     padding-left: 30vw;
+        //     padding-right: 30vw;
+        //     --background: var(--ion-color-tertiary-shade);
+        //     --color: var(--ion-color-tertiary);
+        //     --border-color: var(--ion-color-tertiary-shade);
+        //     --border-radius: 20px;
+        //     --border-width: 1px;
+        // }
+    }
+}
+
+.form-error {
+    font-size: $error-font-size;
+    padding-top: $error-font-size * 0.5;
+    color: var(--ion-color-danger-tint);
+}
+
+.links {
+    margin-bottom: 20px;
+
+    a {
+        color: #333;
+        margin-top: 20px;
+        font-size: 13px;
+        text-decoration: none;
+    }
+}

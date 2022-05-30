@@ -1,0 +1,23 @@
+<ion-content>
+  <ion-col class="loginContent" >
+    <ion-card class="loginLogo">
+    </ion-card>
+    <form [formGroup]="smsVerificationForm">
+      <ion-item class="input- ion-no-padding">
+        <ion-label position="floating">{{"AUTH.SMS.code" | translate}}</ion-label>
+        <ion-input formControlName="code" type="number" max-length=6></ion-input>
+      </ion-item>
+      <ion-text #formError>
+        {{formErrorMessage}}
+      </ion-text>
+      <br>
+      <ion-row #sendButton class="sendButton">
+        <ion-col class="ion-no-padding">
+          <ion-button mode="ios" mode="ios" color="dark" expand="block" (click)="verifyCode()" type="submit">
+            {{"AUTH.SMS.send" | translate}}
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-col>
+</ion-content>

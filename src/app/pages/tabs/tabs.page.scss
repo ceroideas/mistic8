@@ -1,0 +1,25 @@
+ion-icon{
+    font-size: 40px;
+}
+
+.adjusted-icon{
+    font-size: 46px;
+}
+
+ion-tab-bar {
+    // --border: 1px solid rgb(180, 180, 180, 0.8);
+    --border: 1px solid #7b5d98;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 56px);
+    border-radius: 50px 50px 0 0;
+    padding: 12px 28px;
+    background-color: #7b5d98;
+    color: #fff !important;
+    ion-tab-button {
+        background: none !important;
+        ion-icon {
+            color: #fff !important;
+        }
+    }
+}

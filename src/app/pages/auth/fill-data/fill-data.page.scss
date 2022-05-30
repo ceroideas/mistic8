@@ -1,0 +1,135 @@
+$background-image: '../../../../assets/img/fondo-persona-hd.jpg';
+
+ion-content {
+    --padding-bottom: 0 !important;
+}
+
+[name="chevron-forward-outline"], [name="chevron-back-outline"] {
+    font-size: 28px;
+    color: #7b5d98;
+    position: absolute;
+    left: 32px;
+    top: 32px;
+}
+
+.loginContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    text-align: center;
+    // background: linear-gradient(180deg, var(--ion-color-secondary) 0%, var(--ion-color-secondary-shade) 100%);
+    background: var(--ion-color-light);
+
+    .loginLogo {
+        flex:5 10 250px;
+        height: 200px;
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+        --background: url('../../../../assets/Archivos/imagotipo version vertical/logoRes1.png') no-repeat top center / contain;
+        box-shadow: none !important;
+    }
+}
+
+ion-content {
+    min-height: 100vh;
+    // background: url($background-image) no-repeat top center / cover;
+
+    > form {
+        width: 90%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        margin: auto;
+
+        min-height: 100%;
+        text-align: center;
+        // padding: 0px 2vw;
+        // background: url($background-image) no-repeat top center / cover;
+
+        > ion-text {
+            min-height: 10%;
+            padding-top: 3vh;
+        
+            font-weight: 600;
+            font-size: 5vh;
+        }
+
+        > .input {
+            font-weight: 600;
+
+            margin-top: 15px;
+            
+            --background: rgba(0.0, 0.0, 0.0, 0.4);
+            --border-width: 2px;
+            --border-color: var(--ion-color-tertiary-shade);
+            border-radius: 20px;
+            --border-radius: 20px;
+            --highlight-height: 2px;
+
+            > ion-label {
+                color: var(--ion-color-tertiary);
+            }
+
+            > ion-input {
+                color: var(--ion-color-tertiary);
+            }
+        }
+
+        .formError {
+            height: 0px;
+            --background: #0008;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+
+
+        .termsAndServices {
+            margin: -20px;
+            margin-top: -32px;
+            width: 100vw;
+            font-size: 12px;
+            /* ion-col {
+                ion-item {
+                    font-size: 13px;
+                    --min-height: 35px;
+                    
+                    ion-checkbox {
+                        --size: 13px;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                    }
+
+                    ion-label {
+                        padding-left: 10px;
+
+                        a {
+                            color: #d5c3e2;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                .term1 {
+                    --border-radius: 20px 20px 0px 0px;
+                }
+
+                .term2 {
+                    --border-radius: 0px 0px 20px 20px;
+                }
+            } */
+        }
+    }
+}
+
+// Select colors
+ion-select::part(text), ion-input {
+    color: #333;
+    font-size: 14px;
+}
+
+ion-select::part(icon), ion-input {
+    color: #333;
+    font-size: 14px;
+}

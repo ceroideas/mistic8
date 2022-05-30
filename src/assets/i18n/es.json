@@ -1,0 +1,162 @@
+{
+	"AUTH" : {
+		"LOGIN": {
+			"phone":"Número de teléfono",
+			"password":"Contraseña",
+			"login":"Iniciar sesión",
+			"forgot":"¿Olvidaste tu contraseña?",
+			"new":"Hazte una cuenta",
+			"error1":"El teléfono y la contraseña deben de ser válidos.",
+			"error2":"Teléfono y/o contraseña incorrectos.",
+			"error3":"El usuario no existe. ¿Lo ha escrito bien?",
+			"error4":"Algo ha salido mal. Inténtelo más tarde."
+		},
+		"FILL": {
+			"fill":"¡Rellena tus datos!",
+			"password":"Contraseña",
+			"name":"Nombre",
+			"last_name":"Apellidos",
+			"email":"Correo",
+			"gender":"Género",
+			"country":"País",
+			"comunity":"Comunidad Autónoma",
+			"accept_1":"Estoy de acuerdo con",
+			"accept_2":"los términos y condiciones",
+			"read_1":"He leído y acepto",
+			"read_2":"las políticas de privacidad",
+			"back":"Volver",
+			"accept":"Aceptar",
+			"from_err_1":"¡Problema con el inicio de sesión! Prueba con otra cuenta o más tarde.",
+			"from_err_2":"Parece que tu teléfono ya está registrado, ¿Lo has escrito bien?",
+			"error_1":"Debe aceptar las políticas de privacidad para poder registrarse.",
+			"error_2":"Debe aceptar los términos y condiciones para registrarse.",
+			"error_3":"Seleccione una comunidad autónoma.",
+			"error_4":"Seleccione un país.",
+			"error_5":"Seleccione un género.",
+			"error_6":"Ponga un correo para notificaciones.",
+			"error_7":"El nombre debe de ser válido.",
+			"error_8":"La contraseña debe ser de 8 caracteres y tener al menos un número y una letra."
+		},
+		"FORGOT": {
+			"number":"Número de teléfono",
+			"send":"Enviar SMS de verificación",
+			"already":"¿Ya tienes una cuenta?",
+			"error_1":"El número de teléfono debe de ser válido. ",
+			"error_2":"Este número no existe."
+		},
+		"SMS": {
+			"code":"Código SMS de verificación",
+			"send":"Enviar código",
+			"error_1":"Algo ha salido mal. Inténtelo más tarde.",
+			"error_2":"Introduzca el código.",
+			"error_3":"Código de SMS erróneo.",
+			"intro_code":"Introduce el código",
+			"intro_pass":"Introduce la nueva contraseña",
+			"send_2":"Enviar código y contraseña",
+			"login":"¿Ya tienes una cuenta?"
+		}
+	},
+	"EDIT_USER_DATA": {
+		"name":"Nombre y apellidos",
+		"email":"Correo",
+		"gender":"Género",
+		"country":"País",
+		"comunity":"Comunidad Autónoma",
+		"save":"Guardar",
+		"error_1":"El nombre debe de ser válido. ",
+		"error_2":"El correo no es válido.",
+		"error_3":"Seleccione un género. ",
+		"error_4":"Seleccione un país. ",
+		"error_5":"Seleccione una comunidad autónoma."
+	},
+	"EDIT_USER_PASSWORD": {
+		"old_password":"Antigua Contraseña",
+		"new_password":"Nueva Contraseña",
+		"confirm_password":"Confirmación de la nueva Contraseña",
+		"change":"Cambiar",
+
+		"alert_1":"Contraseña antigua incorecta. Inténtelo de nuevo.",
+		"alert_2":"La contraseña debe ser de 8 caracteres y tener al menos un número y una letra. ",
+		"alert_3":"La contraseña nueva debe ser de 8 caracteres y tener al menos un número y una letra. ",
+		"alert_4":"La contraseña nueva debe ser de 8 caracteres y tener al menos un número y una letra. ",
+		"alert_5":"La antigua contraseña y la nueva contraseña tienen que ser distintas",
+		"alert_6":"Las contraseñas no coinciden"
+	},
+	"FRIENDS": {
+
+	},
+	"LOAD_SCREEN": {
+
+	},
+	"MESSAGES": {
+
+	},
+	"NEW_PHOTO_MODAL": {
+		"photo_1":"Subir una Fotografía",
+		"photo_2":"Título de la foto",
+		"photo_3":"Descripción",
+		"photo_4":"Seleccionar para concurso",
+		"photo_5":"¡Faltan campos por rellenar!",
+		"photo_6":"Guardar",
+		"photo_7":"Subir una fotografía",
+		"photo_8":"Selecciona",
+		"photo_9":"Cámara",
+		"photo_10":"Selecciona",
+		"photo_11":"Galería",
+		"photo_12":"Subir",
+		"photo_13":"guardado con exito",
+		"photo_14":"no se pudo guardar"
+	},
+	"OPTIONS": {
+		"option_1":"Editar Perfil",
+		"option_2":"Cambiar contraseña",
+		"option_3":"Políticas de privacidad",
+		"option_4":"Cerrar sesión",
+		"option_5":"Borrar cuenta",
+		"option_6":"Seleccionar Idioma",
+
+		"alert_1":"Cuidado",
+		"alert_2":"Estas haciendo una acción irreversible.",
+		"alert_3":"¿Seguro que deseas borrar tu cuenta?",
+		"alert_4":"Cancelar",
+		"alert_5":"Borrar Cuenta",
+		"alert_6":"Mistic8 Términos de servicio",
+		"alert_7":"Entiendo"
+	},
+	"PROFILE": {
+		"photo":"fotos",
+		"votes":"votos",
+		"text_1":"Opciones de la foto",
+		"text_2":"Eliminar foto",
+		"text_3":"Foto eliminada con éxito.",
+		"text_4":"Sacar del concurso",
+		"text_5":"Foto quitada del concurso.",
+		"text_6":"Cancelar",
+		"text_7":"Opciones foto",
+		"text_8":"Eliminar foto",
+		"text_9":"Foto eliminada con éxito.",
+		"text_10":"Seleccionar a concurso",
+		"text_11":"Foto seleccionada a concurso.",
+		"text_12":"Cancelar",
+		"text_13":"Error",
+		"text_14":"No puedes seleccionar más de 6 fotos a concurso.",
+		"text_15":"Aceptar",
+		"text_16":"Advertencia",
+		"text_17":"¿Seguro deseas <strong>eliminar</strong> esta foto?",
+		"text_18":"Cancelar",
+		"text_19":"Borrada con exito",
+		"text_20":"no se pudo borrar",
+		"text_21":"Foto sacada del concurso con exito",
+		"text_22":"Foto introducida al concurso con exito",
+		"text_23":"no se pudo hacer completar la acción"
+	},
+	"TUTORIAL": {
+
+	},
+	"VOTING": {
+
+	},
+	"WELCOME": {
+		
+	}
+}

@@ -1,0 +1,91 @@
+ion-toolbar {
+    --color: var(--ion-color-tertiary-contrast);
+    --background: var(--ion-color-tertiary);
+}
+
+ion-tab-bar {
+    --ion-tab-bar-color: red !important;
+    --ion-border-color: red !important;
+    --ion-color-step-150: red !important;
+    --border: 1px solid red !important;
+}
+
+ion-content {
+    .user {
+        font-size: 22px;
+        align-self: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    ion-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        min-height: 80vh;
+
+        > ion-row {
+            flex: 1 5 auto;
+
+            ion-button {
+                height: 80%;
+            }
+        }
+    }
+}
+
+ion-label {
+    overflow: unset !important;
+}
+
+ion-item {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+[name="chevron-forward-outline"] {
+    font-size: 28px;
+    color: #7b5d98;
+}
+
+.header {
+    padding: 2em; 
+    padding-top: 3em; 
+    padding-bottom: 0.7em; 
+    background-color: #FFF;
+    // --background: #FFF;
+    background-image: url(../../../assets/falla.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 130px;
+    color: white;
+}
+
+.user-name{
+  color: #fff !important;
+  font-weight: bolder;
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 0.6em;
+}
+
+.arrobauser {
+  color: var(--ion-color-light);
+  color: rgba(255,255,255,.5);
+  margin-bottom: 2em;
+  display: block;
+}
+
+.user-profile-img{
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50px;
+  overflow: hidden;
+  // border: 2px solid  var(--ion-color-tertiary-contrast);
+  margin: 0 auto;
+  margin-bottom: 38px;
+  // margin-right: 12px;
+  position: relative;
+  top: -4px;
+}

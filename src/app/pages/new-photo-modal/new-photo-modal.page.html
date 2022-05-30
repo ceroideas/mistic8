@@ -1,0 +1,135 @@
+<ion-content color="light">
+
+  <img src="assets/img/bg.png" alt="" style="width: 100%;">
+
+
+  <img src="assets/Archivos/isotipo/isoRes1.png" alt="" style="width: 150px; position: relative; top: -140px; left: 20px; margin-bottom: -140px;">
+
+  <ion-col class="ion-justify-content-center">
+  <form>
+
+  <h4>{{"NEW_PHOTO_MODAL.photo_1" | translate}}
+
+    <ion-icon name="close" class="selection cmt" routerLink="/tabs/profile"></ion-icon>
+
+    <ion-icon name="cloud-upload-outline" (click)="animateModal(1)" class="selection cmt"></ion-icon>
+
+  </h4>
+
+  <br>
+  
+  <!-- <div class="space"></div>
+
+  <ion-row class="ion-justify-content-around">
+    <ion-button (click)="takePicture()" color="tertiary" vertical="top" class="new-photo-button">
+      <ion-icon name="camera-outline" size="large"></ion-icon>
+      <p style="font-size:medium; margin: 0 auto;">Cámara</p>
+    </ion-button>
+    
+    <ion-button color="tertiary">
+      <label for="file-upload" style="display: contents;">
+        <ion-icon slot="icon-only" size="large" name="images"></ion-icon>
+        <p style="font-size:medium;  display: contents;">Galería</p>
+      </label>
+    </ion-button>
+  </ion-row>
+
+  <div class="space"></div> -->
+  
+  <input (change)="newImageUpload($event)" id="file-upload" type="file" accept="image/*" style="display: none" required>
+  
+  <ion-item class="input ion-no-padding">
+    <ion-label position="floating">{{"NEW_PHOTO_MODAL.photo_2" | translate}}</ion-label>
+    <ion-input [(ngModel)]="newPhoto.title" [ngModelOptions]="{standalone: true}"  type="text" inputmode="text" placeholder="Título de la foto" required></ion-input>
+  </ion-item>
+  <div class="space"></div>
+  <ion-item class="input ion-no-padding">
+    <ion-label position="floating">{{"NEW_PHOTO_MODAL.photo_3" | translate}}</ion-label>
+    <ion-input [(ngModel)]="newPhoto.descripcion" [ngModelOptions]="{standalone: true}" type="text" inputmode="text" placeholder="Descripción de la foto" required></ion-input>
+  </ion-item>
+  <div class="space"></div>
+  <ion-item class="input ion-no-padding">
+    <ion-label >{{"NEW_PHOTO_MODAL.photo_4" | translate}} </ion-label>
+    <ion-checkbox [(ngModel)]="newPhoto.isSelected" [ngModelOptions]="{standalone: true}" type="boolean" slot="end" ></ion-checkbox>
+  </ion-item>
+  <div class="space"></div>
+
+  <ion-card *ngIf="newImage">
+    <img [src]="newImage" alt="">
+
+  </ion-card>
+
+  <p *ngIf="formIncomplete" class="errorMessage">{{"NEW_PHOTO_MODAL.photo_5" | translate}}</p>
+  
+  <div class="space"></div>
+  <ion-row class="ion-justify-content-around ion-no-padding">
+    <ion-col class="ion-no-padding" size="12">
+      <ion-button (click)="guardarPhoto()" mode="ios" color="dark" expand="block">
+        {{"NEW_PHOTO_MODAL.photo_6" | translate}}
+      </ion-button>
+    </ion-col>
+    
+    <!-- <ion-button routerLink="/tabs/profile"  mode="ios" fill="outline" color="secondary"
+    shape="round">
+      Cancelar
+    </ion-button> -->
+  </ion-row>
+
+    <!--<ion-fab vertical="bottom" horizontal="start" slot="fixed" [hidden]="hiddeActionButtons">
+    </ion-fab>
+
+    <div class="new-photo-buttons" [hidden]="!hiddeActionButtons">
+    </div>
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed" [hidden]="hiddeActionButtons">
+      <ion-fab-button (click)="closeModalWithImage()">
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>-->
+  </form>
+</ion-col>
+
+<div id="container-modal"
+
+[ngStyle]="{'opacity': openModal}"
+
+(click)="animateModal(0)">
+
+  <ion-card id="upload-card" (click)="$event.stopPropagation()">
+    <ion-card-header><h4 class="ion-no-margin" style="text-align: center;">{{"NEW_PHOTO_MODAL.photo_7" | translate}}</h4></ion-card-header>
+    <ion-card-content>
+
+
+      <div class="input ion-no-padding">
+        <label>{{"NEW_PHOTO_MODAL.photo_8" | translate}}</label>
+        <div class="select" (click)="selected = 'take'">
+          {{"NEW_PHOTO_MODAL.photo_9" | translate}}
+
+          <ion-icon *ngIf="selected == 'take'" name="checkbox-outline" class="selection"></ion-icon>
+          <ion-icon *ngIf="selected == 'gallery' || selected == null" name="square-outline" class="selection"></ion-icon>
+          <br>
+        </div>
+      </div>
+
+      <div class="input ion-no-padding">
+        <label>{{"NEW_PHOTO_MODAL.photo_10" | translate}}</label>
+        <div class="select" (click)="selected = 'gallery'">
+          {{"NEW_PHOTO_MODAL.photo_11" | translate}}
+
+          <ion-icon *ngIf="selected == 'gallery'" name="checkbox-outline" class="selection"></ion-icon>
+          <ion-icon *ngIf="selected == 'take' || selected == null" name="square-outline" class="selection"></ion-icon>
+          <br>
+        </div>
+      </div>
+
+      <br>
+
+      <ion-button (click)="doAction()" mode="ios" color="dark" expand="block">
+        {{"NEW_PHOTO_MODAL.photo_12" | translate}}
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
+</div>
+
+</ion-content>

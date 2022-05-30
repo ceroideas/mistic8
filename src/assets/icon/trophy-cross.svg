@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<defs>
+		<image width="1024" height="1024" id="img1" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIGNsYXNzPSdpb25pY29uJyB2aWV3Qm94PScwIDAgNTEyIDUxMic+PHRpdGxlPkNsb3NlPC90aXRsZT48cGF0aCBmaWxsPSdub25lJyBzdHJva2U9J2N1cnJlbnRDb2xvcicgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBzdHJva2UtbGluZWpvaW49J3JvdW5kJyBzdHJva2Utd2lkdGg9JzMyJyBkPSdNMzY4IDM2OEwxNDQgMTQ0TTM2OCAxNDRMMTQ0IDM2OCcvPjwvc3ZnPg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #000000;stroke-linecap:round;stroke-linejoin:round;stroke-width: 32 } 
+	</style>
+	<path id="Layer" class="shp0" d="M176 464L336 464" />
+	<path id="Layer" class="shp0" d="M256 464L256 336" />
+	<path id="Layer" fill-rule="evenodd" class="shp0" d="M384 224C384 173.36 383.92 89.37 383.88 64C383.88 61.9 383.47 59.82 382.66 57.88C381.86 55.94 380.68 54.17 379.19 52.69C377.71 51.2 375.94 50.02 374 49.22C372.06 48.41 369.98 48 367.88 48L144.09 48.26C141.99 48.26 139.92 48.67 137.98 49.47C136.04 50.27 134.28 51.45 132.79 52.93C131.31 54.41 130.13 56.17 129.32 58.1C128.52 60.04 128.1 62.11 128.09 64.21C128.09 94.79 127.96 193.38 127.96 224C127.96 288.28 210.96 336 255.96 336C300.96 336 384 288.28 384 224Z" />
+	<path id="Layer" class="shp0" d="M128 96L48 96L48 112C48 167.22 81.55 224 128 224" />
+	<path id="Layer" class="shp0" d="M384 224C430.45 224 464 167.22 464 112L464 96L384 96" />
+	<use id="img1" href="#img1" transform="matrix(0.943,0,0,0.943,-226,-242)"/>
+</svg>

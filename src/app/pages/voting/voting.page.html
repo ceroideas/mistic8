@@ -1,0 +1,47 @@
+<ion-content [fullscreen]="true" scrollX="false" scrollY="false" color="light">
+
+  <ion-slides pager="false" class="swiper-no-swiping">
+
+    <ion-slide *ngFor="let photo of photos" bac>
+      <img [src]="photo.file" alt="" class="vote-image">
+        <!--<ion-range min="0" max="10" color="secondary" pin="true">
+          <ion-label slot="start">0</ion-label>
+          <ion-label slot="end">10</ion-label>
+        </ion-range>
+        <ion-button (click)="next(i)" *ngIf="i < 6">Puntúa</ion-button> 
+        <ion-button *ngIf="i == 6" (click)="showAlert()">Puntúa</ion-button>-->
+    </ion-slide>
+  </ion-slides> 
+
+  <div class="load-photos-button-container">
+    <p *ngIf="displayPunctuationBar=='none'" style="color:var(--ion-color-tertiary-contrast)">¡Cargar más fotos!</p>
+    <ion-button class="load-photos-button" (click)="askForPhotos()" shape="round" fill="outline">
+      <ion-icon #getPhotosIcon style="width: 70px; height: 70px;color:var(--ion-color-tertiary-contrast)" name="camera-reverse"></ion-icon>
+    </ion-button>
+
+  </div>
+  <div id="votingData" #indexContent>
+    <div class="punctuation-number-div" style="z-index: 9999;">
+        <p [style.color]="punctuationColor" > {{score}}</p>
+      </div>
+    
+    <div id="votingZone" [style.display]="displayPunctuationBar">
+      
+      <ion-range min="0" max="10" step="1" style="pointer-events: none;">
+      </ion-range>
+      <div class="range-numbers">
+        <p>0</p>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+      </div>
+    </div>
+  </div>
+</ion-content>

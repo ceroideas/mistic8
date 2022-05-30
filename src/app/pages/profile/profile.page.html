@@ -1,0 +1,80 @@
+<ion-content color="light" [fullscreen]="true" *ngIf="user$ | async as user">
+
+  <div class="profile-header">
+
+    <ion-row style="width: 100%;">
+      <ion-col size="8">
+        <div style="position: relative; height: 100.781px; overflow: hidden; margin-top: -52px;">
+          <h3 class="user-name">{{nombreUser}}</h3>
+        </div>
+
+        <small class="arrobauser">@{{misticId}}</small>
+
+        <ion-row>
+          <ion-col>{{totalPhotos}} {{"PROFILE.photo" | translate}}</ion-col>
+          <ion-col>{{totalViews}} {{"PROFILE.votes" | translate}}</ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col size="4">
+        <div class="user-profile-img">
+          <img *ngIf="!avatar" src="assets/img/ProfileUser.png">
+          <img *ngIf="avatar" [src]="avatar">
+        </div>
+
+        <h6 class="profile-media">{{notaMediaFotos}}</h6>
+      </ion-col>
+    </ion-row>
+    <!-- <div class="username-visualization-container">
+      
+      <ion-label style="font-weight: bold; color: var(--ion-color-tertiary-contrast);">{{misticId}}</ion-label>
+      <ion-label class="visualization-photos-container">, </ion-label>
+    </div>
+    <div class="average-score">
+      <ion-label>{{notaMediaFotos}}</ion-label>
+    </div> -->
+  </div>
+
+  <ion-grid style="padding: 0;" style="touch-action: pan-y !important;" >
+
+    <div class="masonry" style="touch-action: pan-y !important;">
+
+      <div class="container">
+        <figure class="image-container" *ngFor="let photo of photos" [ngClass]="{'selected' : photo.isSelected}"  (tap)="presentActionSheet(photo)" (press)="presentActionSheetPress(photo)">
+          <ion-icon name="checkmark-circle-outline" class="checkmark"></ion-icon>
+          <img [src]="photo.file">
+          <figcaption>
+            <div>
+              
+            <ion-row>
+              <ion-col size="8" style="display: flex;">
+                <span style="margin: auto;">
+                  {{photo.title}}
+                </span>
+              </ion-col>
+              <ion-col size="4" style="text-align: center; font-size: 20px; line-height: 1">{{photo.nota}}<br><small>{{photo.totalVotes}} {{"PROFILE.votes" | translate}}</small></ion-col>
+            </ion-row>
+            
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+
+    </div>
+    <!-- <ion-row style="touch-action: pan-y !important;">
+      <ion-col size="6" *ngFor="let photo of photos" style="margin-bottom: 0.5em; padding: 2px;">
+        <div class="image-container" [ngClass]="{'selected' : photo.isSelected}"  (tap)="presentActionSheet(photo)" (press)="presentActionSheetPress(photo)" >
+          <img [src]="photo.file" alt="">
+          <div id="imgDescription">
+            <div id="imgTitle">
+              <p>{{photo.title}}</p>
+            </div>
+            <div id="imgData">
+              <ion-label id="imgNote">{{photo.nota}}</ion-label>
+              <ion-label id="imgVotes">{{photo.totalVotes}} votos</ion-label>
+            </div>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row> -->
+  </ion-grid>
+</ion-content>

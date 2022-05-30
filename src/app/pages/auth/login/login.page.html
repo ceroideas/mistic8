@@ -1,0 +1,37 @@
+<ion-content>
+  <ion-col class="loginContent" >
+    <ion-card class="loginLogo">
+    </ion-card>
+    <form [formGroup]="loginForm">
+      <ion-row class="input">
+        <ion-col class="ion-no-padding">
+          <ion-item color="light" class="loginInput- ion-no-padding">
+            <ion-label position="floating">{{"AUTH.LOGIN.phone" | translate}}</ion-label>
+            <ion-input formControlName="phone" type="text" required></ion-input>
+          </ion-item>
+          <br>
+          <div class="space"></div>
+          <ion-item color="light" class="loginInput- ion-no-padding">
+            <ion-label position="floating">{{"AUTH.LOGIN.password" | translate}}</ion-label>
+            <ion-input formControlName="password" type="password" required></ion-input>
+          </ion-item>
+          <ion-text *ngIf="formError" color="danger" class="form-error">
+            {{formErrorMessage}}
+          </ion-text>
+        </ion-col>
+      </ion-row>
+      <!-- <ion-button class="button" mode="ios" fill="outline" shape="round" (click)="onLogin()">{{"AUTH.LOGIN.login" | translate}}</ion-button> -->
+
+      <ion-row class="links ion-justify-content-around">
+        <a routerLink="/forgot-password">{{"AUTH.LOGIN.forgot" | translate}}</a>
+        <a routerLink="/register">{{"AUTH.LOGIN.new" | translate}}</a>
+      </ion-row>
+
+      <br>
+
+      <ion-button (click)="onLogin()" type="submit" mode="ios" color="dark" expand="block">
+        {{"AUTH.LOGIN.login" | translate}}
+      </ion-button>
+    </form>
+  </ion-col>
+</ion-content>

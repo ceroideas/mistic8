@@ -1,0 +1,147 @@
+<ion-content color="light">
+
+  <div class="header">
+    
+    <ion-row style="width: 100%;">
+      <ion-col size="8">
+        <div style="position: relative; height: 100.781px; overflow: hidden; margin-top: -52px;">
+          <h3 class="user-name">{{nombreUser}}</h3>
+        </div>
+
+        <small class="arrobauser">@{{misticId}}</small>
+      </ion-col>
+      <ion-col size="4" style="text-align: center;">
+        <div class="user-profile-img">
+          <img *ngIf="!avatar" src="assets/img/ProfileUser.png">
+          <img *ngIf="avatar" [src]="avatar">
+          <input (change)="newImageUpload($event)" id="file-upload" type="file" accept="image/*" style="display: none" required>
+        </div>
+
+        <ion-icon style="font-size: 24px; position: relative; margin-top: -10px;" (click)="animateModal(1)" name="pencil"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+  </div>
+
+  <br>
+
+
+  <!-- <ion-card
+    class="registerLogo"
+    style="--background: url('../../assets/Archivos/imagotipo version vertical/logoRes1.png') no-repeat top center / contain">
+  </ion-card> --> 
+  <form [formGroup]="fillDataForm">
+    <ion-icon name="chevron-back-outline" routerLink="/tabs/options"></ion-icon>
+
+    <!-- <ion-text color="secondary">Editar perfil</ion-text> -->
+    <ion-item class="input- ion-no-padding" lines="full">
+      <ion-label position="floating">{{"EDIT_USER_DATA.name" | translate}}</ion-label>
+      <ion-input formControlName="name" value={{nombreUser}} type="text"></ion-input>
+    </ion-item>
+
+    <ion-item class="input- ion-no-padding" lines="full">
+      <ion-label position="floating">{{"EDIT_USER_DATA.email" | translate}}</ion-label>
+      <ion-input formControlName="notificationEmail" value={{notificationEmail}} type="text"></ion-input>
+    </ion-item>
+
+    <ion-row>
+      
+      <ion-col size="6" class="ion-no-padding">
+        
+        <ion-item class="input- ion-no-padding" >
+          <ion-label position="floating">{{"EDIT_USER_DATA.gender" | translate}}: {{gender}}</ion-label>
+          <ion-select #genderSelector 
+            formControlName="gender"
+            value="{{gender}}"
+            [interfaceOptions]="popoverOptions">
+              <ion-select-option *ngFor="let gender of genderOptions" value="{{gender}}">{{gender}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+
+      <ion-col size="6" class="ion-no-padding">
+        <ion-item class="input- ion-no-padding" >
+          <ion-label position="floating">{{"EDIT_USER_DATA.country" | translate}}: {{country}}</ion-label>
+          <ion-select #countrySelector
+            formControlName="country" 
+            value="{{country}}"
+            [interfaceOptions]="popoverOptions">
+              <ion-select-option *ngFor="let country of countryOptions" value="{{country}}">{{country}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-item class="input- ion-no-padding">
+      <ion-label position="floating">{{"EDIT_USER_DATA.comunity" | translate}}: {{state}}</ion-label>
+      <ion-select #stateSelector
+        formControlName="state"
+        value="{{state}}"
+        [interfaceOptions]="popoverOptions">
+          <ion-select-option *ngFor="let state of stateOptions" value="{{state}}">{{state}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-text *ngIf="formError" color="danger" class="formError">
+      {{formErrorMessage}}
+    </ion-text>
+
+    <ion-row>
+      <ion-col class="ion-no-padding">
+        <ion-button (click)="update()" type="submit" mode="ios" color="dark" expand="block">
+          {{"EDIT_USER_DATA.save" | translate}}
+        </ion-button>
+        
+        <!-- <ion-button routerLink="/tabs/options"  mode="ios" fill="outline" color="secondary"
+        shape="round">
+          Cancelar
+        </ion-button> -->
+
+      </ion-col>
+    </ion-row>
+  </form>
+
+
+  <div id="container-modal"
+
+    [ngStyle]="{'opacity': openModal}"
+
+    (click)="animateModal(0)">
+
+      <ion-card id="upload-card" (click)="$event.stopPropagation()">
+        <ion-card-header><h4 class="ion-no-margin" style="text-align: center;">Subir una fotografía</h4></ion-card-header>
+        <ion-card-content>
+
+
+          <div class="input ion-no-padding">
+            <label>Selecciona</label>
+            <div class="select" (click)="selected = 'take'">
+              Cámara
+
+              <ion-icon *ngIf="selected == 'take'" name="checkbox-outline" class="selection"></ion-icon>
+              <ion-icon *ngIf="selected == 'gallery' || selected == null" name="square-outline" class="selection"></ion-icon>
+              <br>
+            </div>
+          </div>
+
+          <div class="input ion-no-padding">
+            <label>Selecciona</label>
+            <div class="select" (click)="selected = 'gallery'">
+              Galería
+
+              <ion-icon *ngIf="selected == 'gallery'" name="checkbox-outline" class="selection"></ion-icon>
+              <ion-icon *ngIf="selected == 'take' || selected == null" name="square-outline" class="selection"></ion-icon>
+              <br>
+            </div>
+          </div>
+
+          <br>
+
+          <ion-button (click)="doAction()" mode="ios" color="dark" expand="block">
+            Subir
+          </ion-button>
+
+        </ion-card-content>
+      </ion-card>
+    </div>
+</ion-content>

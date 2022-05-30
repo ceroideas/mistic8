@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #ffffff;stroke-linejoin:round;stroke-width: 32 } 
+		.shp1 { fill: none;stroke: #ffffff;stroke-width: 32 } 
+		.shp2 { fill: none;stroke: #ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width: 32 } 
+		.shp3 { fill: none;stroke: #ffffff;stroke-width: 32 } 
+	</style>
+	<path id="Layer" class="shp0" d="M96 80L416 80C442.54 80 464 101.46 464 128L464 384C464 410.54 442.54 432 416 432L96 432C69.46 432 48 410.54 48 384L48 128C48 101.46 69.46 80 96 80Z" />
+	<path id="Layer" class="shp1" d="M336 208C318.3 208 304 193.7 304 176C304 158.3 318.3 144 336 144C353.7 144 368 158.3 368 176C368 193.7 353.7 208 336 208Z" />
+	<path id="Layer" fill-rule="evenodd" class="shp2" d="M48 352L169.47 244C172.49 241.32 176 239.23 179.8 237.85C183.6 236.47 187.62 235.82 191.66 235.94C195.7 236.06 199.68 236.95 203.4 238.55C207.11 240.15 210.48 242.44 213.34 245.3L304 335.79M224 432L347.34 308.66C350.14 305.86 353.43 303.6 357.05 302C360.67 300.4 364.55 299.48 368.51 299.3C372.46 299.12 376.41 299.67 380.17 300.93C383.92 302.19 387.41 304.13 390.45 306.66L464 368L224 432Z" />
+	<path id="Layer" class="shp3" d="M168 28L168 316M312 172L24 172" />
+</svg>

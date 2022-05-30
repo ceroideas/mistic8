@@ -1,0 +1,162 @@
+{
+"AUTH" : {
+"LOGIN": {
+"phone":"Phone number",
+"password":"Password",
+"login":"Login",
+"forgot":"Forgot your password?",
+"new":"Create an account",
+"error1":"The phone number and password must be valid.",
+"error2":"Wrong phone number and/or password.",
+"error3":"The user does not exist. Did you type it correctly?",
+"error4":"Something went wrong. Please try again later."
+},
+"FILL": {
+"fill":"Fill in your details!",
+"password":"Password",
+"name":"Name",
+"last_name":"Last name",
+"email":"Email",
+"gender": "Gender",
+"country":"Country",
+"community": "Autonomous Community",
+"accept_1":"I agree with",
+"accept_2":"the terms and conditions",
+"read_1":"I have read and accept",
+"read_2":"privacy policies",
+"back":"Back",
+"accept":"Accept",
+"from_err_1":"Login problem! Try another account or later.",
+"from_err_2":"It seems that your phone is already registered, did you type it correctly?",
+"error_1":"You must accept the privacy policies in order to register.",
+"error_2":"You must accept the terms and conditions to register.",
+"error_3":"Select an autonomous community.",
+"error_4":"Select a country.",
+"error_5":"Please select a genre.",
+"error_6":"Put an email for notifications.",
+"error_7":"The name must be valid.",
+"error_8":"Password must be 8 characters long and have at least one number and one letter."
+},
+"FORGOT": {
+"number":"Phone number",
+"send":"Send verification SMS",
+"already": "Already have an account?",
+"error_1":"The phone number must be valid. ",
+"error_2":"This number does not exist."
+},
+"SMS": {
+"code":"SMS verification code",
+"send":"Send code",
+"error_1":"Something went wrong. Please try again later.",
+"error_2":"Enter the code.",
+"error_3":"Wrong SMS code.",
+"intro_code":"Enter the code",
+"intro_pass":"Enter the new password",
+"send_2":"Send code and password",
+"login": "Already have an account?"
+}
+},
+"EDIT_USER_DATA": {
+"name":"Name and surname",
+"email":"Email",
+"gender": "Gender",
+"country":"Country",
+"community": "Autonomous Community",
+"save":"Save",
+"error_1":"The name must be valid. ",
+"error_2":"The email is not valid.",
+"error_3":"Select a genre. ",
+"error_4":"Select a country. ",
+"error_5":"Select an autonomous community."
+},
+"EDIT_USER_PASSWORD": {
+"old_password":"Old Password",
+"new_password":"New Password",
+"confirm_password":"Confirmation of the new Password",
+"change":"Change",
+
+"alert_1":"Incorrect old password. Please try again.",
+"alert_2":"Password must be 8 characters long and have at least one number and one letter. ",
+"alert_3":"The new password must be 8 characters long and have at least one number and one letter. ",
+"alert_4":"The new password must be 8 characters long and have at least one number and one letter. ",
+"alert_5":"The old password and the new password must be different",
+"alert_6":"Passwords do not match"
+},
+"FRIENDS": {
+
+},
+"LOAD_SCREEN": {
+
+},
+"MESSAGES": {
+
+},
+"NEW_PHOTO_MODAL": {
+"photo_1":"Upload a Photo",
+"photo_2":"Photo Title",
+"photo_3":"Description",
+"photo_4":"Select for contest",
+"photo_5":"There are missing fields to fill in!",
+"photo_6":"Save",
+"photo_7":"Upload a photo",
+"photo_8":"Select",
+"photo_9":"Camera",
+"photo_10":"Select",
+"photo_11":"Gallery",
+"photo_12":"Upload",
+"photo_13":"saved successfully",
+"photo_14":"could not save"
+},
+"OPTIONS": {
+"option_1":"Edit Profile",
+"option_2":"Change password",
+"option_3":"Privacy policies",
+"option_4":"Logout",
+"option_5":"Delete account",
+"option_6":"Select Language",
+
+"alert_1":"Warning",
+"alert_2":"You are doing an irreversible action.",
+"alert_3":"Are you sure you want to delete your account?",
+"alert_4":"Cancel",
+"alert_5":"Delete Account",
+"alert_6":"Mistic8 Terms of Service",
+"alert_7":"I understand"
+},
+"PROFILE": {
+"photo":"photos",
+"votes": "votes",
+"text_1":"Photo Options",
+"text_2":"Delete photo",
+"text_3":"Photo deleted successfully.",
+"text_4":"Remove from the contest",
+"text_5":"Photo removed from the contest.",
+"text_6":"Cancel",
+"text_7":"Photo Options",
+"text_8":"Delete photo",
+"text_9":"Photo deleted successfully.",
+"text_10":"Select to contest",
+"text_11":"Photo selected for the contest.",
+"text_12":"Cancel",
+"text_13":"Error",
+"text_14":"You cannot select more than 6 photos for the contest.",
+"text_15":"OK",
+"text_16":"Warning",
+"text_17":"Are you sure you want to <strong>delete</strong> this photo?",
+"text_18":"Cancel",
+"text_19":"Deleted successfully",
+"text_20":"unable to delete",
+"text_21":"Photo successfully taken from the contest",
+"text_22":"Photo successfully entered into the contest",
+"text_23":"could not complete the action"
+},
+"TUTORIAL": {
+
+},
+"VOTING": {
+
+},
+"WELCOME": {
+
+}
+}

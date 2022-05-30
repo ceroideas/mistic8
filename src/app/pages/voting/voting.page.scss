@@ -1,0 +1,142 @@
+ion-slide{
+  width: 100vw;
+  height: 85vh;
+  padding-bottom: 51px;
+    img{
+        width: 95vw;
+        border-radius: 8px;
+    }
+}
+
+ion-content {
+
+}
+
+.modal-contenido{
+    background-color:aqua;
+    width:300px;
+    padding: 10px 20px;
+    margin: 20% auto;
+    position: relative;
+  }
+  .modal{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+  }
+  #miModal:target{
+    opacity:1;
+    pointer-events:auto;
+  }
+
+  #votingData {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+  }
+
+  .swiper-slide img {
+    max-height: 60vh !important;
+  }
+
+#votingZone{
+  white-space: break-spaces;
+  align-items: self-end;
+  position: relative;
+  // bottom: 120px;
+  width: 100vw;
+  z-index: 100;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#votingZone > p{
+  width: 40px;
+}
+
+.load-photos-button-container{
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.load-photos-button-container p{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+  color:  #243746;
+}
+
+.load-photos-button {
+  width: 120px;
+  height: 120px;
+  --box-shadow: 3px 3px 6px #acacac;
+}
+
+ion-range{
+  --bar-height:10px;
+  --bar-border-radius:5px;
+  --bar-background: #c3c3c3;
+  --bar-background-active:  -webkit-linear-gradient(left,#333,#888);
+  --knob-size: 0px;
+  // border: 1px solid #ccc;
+  padding-bottom: 0px;
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+
+.vote-punctuation{
+  z-index: 200;
+  position: absolute;
+  bottom: 50vh;
+  width: 100%;
+  margin-bottom: -51px;
+
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.vote-punctuation img{
+  opacity: .7;
+}
+
+.punctuation-number-div{
+  z-index: 1;
+  // position: absolute;
+  // bottom: 16%;
+  font-size: 40px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.punctuation-number-div p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.range-numbers{
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+  top: -10px;
+}
+
+.range-numbers p{
+  margin: 0 auto;
+  font-size: 14px;
+  color: rgb(110, 110, 110);
+}

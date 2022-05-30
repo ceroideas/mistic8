@@ -1,0 +1,8 @@
+{
+  "name": "mistic8",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

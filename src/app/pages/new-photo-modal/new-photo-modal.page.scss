@@ -1,0 +1,130 @@
+ion-content {
+    justify-content: center;
+    
+    .space {
+        height: 20px;
+    }
+
+    #upload-card {
+        position: absolute; margin: auto; top: 0; bottom: 0; left: 0; right: 0; width: 80%; z-index: 1;background-color: #fff; height: 300px; border-radius: 20px; box-shadow: 0 0 15px 10px rgba(0, 0, 0, .3);
+    }
+
+    label {
+        color: gray;
+        font-size: 13px;
+    }
+    .select {
+        color: #4E3962;
+        font-size: 13px;
+        border-bottom: 1px solid #e1e1e1;
+        margin-bottom: 24px;
+        line-height: 2.4;
+    }
+
+    .selection {
+        float: right;
+        font-size: 26px;
+        color: #888;
+    }
+
+    .cmt {
+        color: #7b5d98;
+        margin-left: 8px;
+    }
+
+    #container-modal {
+        position: fixed; height: 100vh; background-color: rgba(0, 0, 0, .3); z-index: 1; width: 100vw; top: 0; bottom: 0; left: 0; right: 0; transition: all 200ms; visibility: hidden;
+    }
+
+    ion-item {
+        --inner-padding-start: 0;
+        --background: transparent;
+
+        --border-color: silver !important;
+    }
+
+    ion-label {
+        color: var(--ion-color-tertiary-contrast);
+    }
+
+    ion-input {
+        color: var(--ion-color-tertiary-contrast);
+    }
+
+    form {
+        // display: flex;
+        // flex-flow: column wrap;
+        justify-content: center;
+
+        // min-height: 100%;
+        // text-align: center;
+        padding: 0px 10vw;
+
+        .new-photo-button {
+            p {
+                color: var(--ion-color-tertiary-contrast);
+            }
+        }
+
+        h4 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .user-photo {
+            max-height: 100%;
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            position: relative;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        .errorMessage{
+            color: red;
+            font-size: 14px;
+        }
+        
+        .button-gallery{
+            font-size: 14px;
+        }
+
+        /* > .input {
+            font-weight: 600;
+            
+            --background:  var(--ion-color-tertiary);
+            --border-width: 2px;
+            --border-color: var(--ion-color-tertiary-shade);
+            border-radius: 20px;
+            --border-radius: 20px;
+            --highlight-height: 2px;
+
+            > ion-label {
+                color: var(--ion-color-tertiary-contrast);
+            }
+
+            > ion-input {
+                color: var(--ion-color-tertiary-contrast);
+            }
+        } */
+
+        .formError {
+            height: 0px;
+            --background: #0008;
+            border-radius: 20px;
+        }
+    }
+}
+
+// Select colors
+ion-select::part(text) {
+    color: var(--ion-color-tertiary-contrast);
+}
+
+ion-select::part(icon) {
+    color: var(--ion-color-tertiary-contrast);
+}
